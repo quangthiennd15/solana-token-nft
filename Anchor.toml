@@ -1,0 +1,18 @@
+[toolchain]
+
+[features]
+resolution = false
+skip-lint = false
+
+[programs.devnet]
+solana-token-nft = "DdW7bY8dPn1WUgajNFcLgxCGJxKXLeGXKnKfo5v3vokB"
+
+[registry]
+url = "https://api.devnet.solana.com"
+
+[provider]
+cluster = "Devnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/soleague-marketplace.ts"
